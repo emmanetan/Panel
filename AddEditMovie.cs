@@ -24,14 +24,12 @@ namespace DynamicControlsApp
             InitializeComponent();
             IsEdit = false;
         }
-
         public AddEditMovie(Movie movie)
         {
             InitializeComponent();
             IsEdit = true;
             OriginalMovie = movie;
         }
-
         private void AddEditMovie_Load(object sender, EventArgs e)
         {
             DataSaved = false;
@@ -48,7 +46,6 @@ namespace DynamicControlsApp
                 this.Text = "Add";
             }
         }
-
         private void PopulateOriginalMovie()
         {
             TxtTitle.Text = OriginalMovie.Title;
@@ -115,7 +112,6 @@ namespace DynamicControlsApp
             }
 
         }
-
         private void ShowErrors(List<string> errors, int max)
         {
             MessageBoxIcon icon;
